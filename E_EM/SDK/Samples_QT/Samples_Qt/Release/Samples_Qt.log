@@ -1,0 +1,40 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Moc'ing Samples_Qt_TriggerCount.h...
+  Rcc'ing Samples_Qt_TriggerCount.qrc...
+  Uic'ing Samples_Qt_TriggerCount.ui...
+  RCC: Warning: No resources in 'C:\Program Files\Microvision\E_EM\SDK\Samples_QT - 鍓湰\Samples_Qt\Samples_Qt_TriggerCount.qrc'.
+  main.cpp
+  MVScrollArea.cpp
+  Samples_Qt_TriggerCount.cpp
+  moc_Samples_Qt_TriggerCount.cpp
+  qrc_Samples_Qt_TriggerCount.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall MVImage::MVImage(void)" (__imp_??0MVImage@@QAE@XZ)，该符号在函数 "public: __thiscall Samples_Qt_TriggerCount::Samples_Qt_TriggerCount(class QWidget *)" (??0Samples_Qt_TriggerCount@@QAE@PAVQWidget@@@Z) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall MVImage::~MVImage(void)" (__imp_??1MVImage@@QAE@XZ)，该符号在函数 __unwindfunclet$??0Samples_Qt_TriggerCount@@QAE@PAVQWidget@@@Z$1 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: int __thiscall MVImage::CreateByPixelFormat(int,int,enum MV_PixelFormatEnums)" (__imp_?CreateByPixelFormat@MVImage@@QAEHHHW4MV_PixelFormatEnums@@@Z)，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: int __thiscall MVImage::GetWidth(void)" (__imp_?GetWidth@MVImage@@QAEHXZ)，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::drawImageForWindow(void)" (?drawImageForWindow@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: int __thiscall MVImage::GetHeight(void)" (__imp_?GetHeight@MVImage@@QAEHXZ)，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::drawImageForWindow(void)" (?drawImageForWindow@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: struct HBITMAP__ * __thiscall MVImage::GetHBitmap(void)" (__imp_?GetHBitmap@MVImage@@QAEPAUHBITMAP__@@XZ)，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::drawImageForWindow(void)" (?drawImageForWindow@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVInitLib@0，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::init(void)" (?init@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVTerminateLib@0，该符号在函数 "public: virtual __thiscall Samples_Qt_TriggerCount::~Samples_Qt_TriggerCount(void)" (??1Samples_Qt_TriggerCount@@UAE@XZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVGetNumOfCameras@4，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::init(void)" (?init@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVGetCameraInfo@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVOpenCamByIndex@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::init(void)" (?init@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVGetWidth@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVGetHeight@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVGetPixelFormat@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVStartGrab@12，该符号在函数 "public: void __thiscall Samples_Qt_TriggerCount::on_lxcj_clicked(void)" (?on_lxcj_clicked@Samples_Qt_TriggerCount@@QAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVStopGrab@4，该符号在函数 "public: virtual __thiscall Samples_Qt_TriggerCount::~Samples_Qt_TriggerCount(void)" (??1Samples_Qt_TriggerCount@@UAE@XZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVSetTriggerMode@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVSetTriggerSource@8，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVTriggerSoftware@4，该符号在函数 "public: void __thiscall Samples_Qt_TriggerCount::on_rcf_clicked(void)" (?on_rcf_clicked@Samples_Qt_TriggerCount@@QAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVInfo2Image@12，该符号在函数 "public: int __thiscall Samples_Qt_TriggerCount::OnStreamCB(struct _IMAGE_INFO *)" (?OnStreamCB@Samples_Qt_TriggerCount@@QAEHPAU_IMAGE_INFO@@@Z) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVCamProptySheetInit@20，该符号在函数 "protected: void __thiscall Samples_Qt_TriggerCount::CameraInitAfter(void)" (?CameraInitAfter@Samples_Qt_TriggerCount@@IAEXXZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVCamProptySheetDestroy@4，该符号在函数 "public: virtual __thiscall Samples_Qt_TriggerCount::~Samples_Qt_TriggerCount(void)" (??1Samples_Qt_TriggerCount@@UAE@XZ) 中被引用
+Samples_Qt_TriggerCount.obj : error LNK2019: 无法解析的外部符号 __imp__MVCamProptySheetShow@8，该符号在函数 "public: void __thiscall Samples_Qt_TriggerCount::on_Set_clicked(void)" (?on_Set_clicked@Samples_Qt_TriggerCount@@QAEXXZ) 中被引用
+../../lib\MVCamProptySheet.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+../../lib\MVGigE.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+../../lib\MVTickDlg.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+../../bin\\Samples_Qt.exe : fatal error LNK1120: 23 个无法解析的外部命令

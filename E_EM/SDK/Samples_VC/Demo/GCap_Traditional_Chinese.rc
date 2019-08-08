@@ -1,0 +1,422 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\GCap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GCap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ACQUISITION DIALOGEX 0, 0, 200, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "采集"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "曝光時間",IDC_STATIC,7,67,186,45
+    EDITTEXT        IDC_GAIN,144,32,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXPOSURETIME,144,82,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAMERATE,144,131,39,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_EXPOSURETIME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,82,125,14
+    GROUPBOX        "增益",IDC_STATIC,7,17,186,45
+    CONTROL         "",IDC_SLIDER_FRAMERATE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,131,125,15
+    GROUPBOX        "幀率",IDC_STATIC,7,117,186,45
+    CONTROL         "",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,32,125,15
+    LTEXT           "Static",IDC_STATIC_GAIN_MIN,18,49,25,8
+    LTEXT           "Static",IDC_STATIC_GAIN_MAX,122,49,25,8
+    LTEXT           "Static",IDC_STATIC_EXPOSURETIME_MIN,18,99,25,8
+    LTEXT           "Static",IDC_STATIC_EXPOSURETIME_MAX,122,99,39,8
+    LTEXT           "Static",IDC_STATIC_FRAMERATE_MIN,18,149,25,8
+    LTEXT           "Static",IDC_STATIC_FRAMERATE_MAX,122,149,25,8
+END
+
+IDD_WHITE_BALANCE DIALOGEX 0, 0, 200, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "白平衡"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_RED,143,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GREEN,143,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLUE,143,132,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_RED,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,12,23,125,15
+    CONTROL         "",IDC_SLIDER_GREEN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,12,77,125,15
+    CONTROL         "",IDC_SLIDER_BLUE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,12,132,125,15
+    GROUPBOX        "紅",IDC_STATIC,7,12,186,45
+    GROUPBOX        "綠",IDC_STATIC,7,65,186,45
+    GROUPBOX        "藍",IDC_STATIC,7,119,186,45
+    LTEXT           "Static",IDC_STATIC_RED_MIN,20,45,19,8
+    LTEXT           "Static",IDC_STATIC_RED_MAX,120,45,19,8
+    LTEXT           "Static",IDC_STATIC_GREEN_MIN,20,98,19,8
+    LTEXT           "Static",IDC_STATIC_BLUE_MAX,120,151,19,8
+    LTEXT           "Static",IDC_STATIC_BLUE_MIN,20,151,19,8
+    LTEXT           "Static",IDC_STATIC_GREEN_MAX,120,98,19,8
+END
+
+IDD_TRANSPORT_LAYER DIALOGEX 0, 0, 200, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "網絡"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PACKETSIZE,144,27,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PACKETDELAY,146,81,29,14,ES_AUTOHSCROLL
+    GROUPBOX        "包大小",IDC_STATIC,7,11,186,50
+    GROUPBOX        "包間距",IDC_STATIC,7,65,186,50
+    CONTROL         "",IDC_SLIDER_PACKETSIZE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,27,125,15
+    CONTROL         "",IDC_SLIDER_PACKETDELAY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,11,81,125,15
+    LTEXT           "Static",IDC_STATIC_PACKETSIZE_MIN,20,48,19,8
+    LTEXT           "Static",IDC_STATIC_PACKETSIZE_MAX,121,48,19,8
+    LTEXT           "Static",IDC_STATIC_PACKETDELAY_MAX,121,103,19,8
+    LTEXT           "Static",IDC_STATIC_PACKETDELAY_MIN,20,103,19,8
+END
+
+IDD_TRIGGER DIALOGEX 0, 0, 200, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "觸發"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "反轉",IDC_STROBEINVERT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,125,32,10
+    CONTROL         "開啟",IDC_TRIGGERMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,26,32,10
+    EDITTEXT        IDC_EDIT_TRIGGERDELAY,144,44,38,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_TRIGGERDELAY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,50,44,90,14
+    GROUPBOX        "Trigger",IDC_STATIC,7,11,186,92
+    GROUPBOX        "輸出",IDC_STATIC,7,109,186,57
+    CONTROL         "用戶",IDC_CHECK_USERUOTPUTVALUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,147,88,10
+    COMBOBOX        IDC_COMBO_TIGGERSOURCE,123,25,59,38,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TRIGGERACTIVATION,55,80,67,37,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STROBESOURCE,54,124,73,52,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "模式：",IDC_STATIC,20,26,27,10
+    LTEXT           "源：",IDC_STATIC,107,26,14,10
+    LTEXT           "延遲",IDC_STATIC,20,47,23,10
+    LTEXT           "觸發沿：",IDC_STATIC,18,81,34,10
+    LTEXT           "Source",IDC_STATIC,21,125,27,10
+    LTEXT           "Static",IDC_STATIC_TRIGGERDELAY_MIN,50,62,19,8
+    LTEXT           "Static",IDC_STATIC_TRIGGERDELAY_MAX,123,63,33,8
+    PUSHBUTTON      "觸發",IDC_BTN_TRIGGER,143,80,39,14
+END
+
+IDD_CAMINFO DIALOGEX 0, 0, 200, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "相機信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "廠商：",IDC_STATIC,17,16,70,8
+    LTEXT           "",IDC_STATIC_MFGNAME,95,16,72,8
+    LTEXT           "型號：",IDC_STATIC,17,31,69,8
+    LTEXT           "",IDC_STATIC_MODELNAME,95,31,72,8
+    GROUPBOX        "基本信息",IDC_STATIC,7,0,186,64
+    LTEXT           "序列號：",IDC_STATIC,17,46,65,8
+    LTEXT           "",IDC_STATIC_SERIALNUMBER,95,46,72,8
+    LTEXT           "寬度：",IDC_STATIC,17,83,64,8
+    LTEXT           "",IDC_STATIC_WIDTH,95,83,72,8
+    LTEXT           "高度：",IDC_STATIC,17,98,70,8
+    LTEXT           "",IDC_STATIC_HEIGHT,95,98,72,8
+    GROUPBOX        "圖像",IDC_STATIC,7,70,186,47
+END
+
+IDD_USERSET DIALOGEX 0, 0, 200, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User Set"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "User Set",IDC_STATIC,7,7,186,53
+    GROUPBOX        "User Set Default ",IDC_STATIC,7,66,186,40
+    COMBOBOX        IDC_COMBO1,47,20,77,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ACQUISITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_WHITE_BALANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_TRANSPORT_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_TRIGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_CAMINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_USERSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TRIGGER DLGINIT
+BEGIN
+    IDC_COMBO_TIGGERSOURCE, 0x403, 9, 0
+0x6f53, 0x7466, 0x6177, 0x6572, "\000" 
+    IDC_COMBO_TIGGERSOURCE, 0x403, 6, 0
+0x694c, 0x656e, 0x0031, 
+    IDC_COMBO_TRIGGERACTIVATION, 0x403, 11, 0
+0x6952, 0x6973, 0x676e, 0x6445, 0x6567, "\000" 
+    IDC_COMBO_TRIGGERACTIVATION, 0x403, 12, 0
+0x6146, 0x6c6c, 0x6e69, 0x4567, 0x6764, 0x0065, 
+    IDC_COMBO_STROBESOURCE, 0x403, 4, 0
+0x664f, 0x0066, 
+    IDC_COMBO_STROBESOURCE, 0x403, 15, 0
+0x7845, 0x6f70, 0x7573, 0x6572, 0x6341, 0x6974, 0x6576, "\000" 
+    IDC_COMBO_STROBESOURCE, 0x403, 13, 0
+0x6954, 0x656d, 0x3172, 0x6341, 0x6974, 0x6576, "\000" 
+    IDC_COMBO_STROBESOURCE, 0x403, 12, 0
+0x7355, 0x7265, 0x754f, 0x7074, 0x7475, 0x0030, 
+    0
+END
+
+IDD_USERSET DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_COMBO1, 0x403, 9, 0
+0x7355, 0x7265, 0x6553, 0x3174, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x7355, 0x7265, 0x6553, 0x3274, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZOOM_MIN     "縮放倍數不能小于0.1!"
+    IDS_STRING_GETCAMERANUM "沒有找到相機,請確認連接和相機IP設置!"
+    IDS_STRING_TRIGGER_FAILED "觸發失敗"
+    IDS_STRING_OPENCAMERA   "無法打開相機，可能正被別的軟件控制!"
+    IDS_STRING_WARNING      "提示"
+    IDS_STRING_PROPERTY_SET "屬性設置"
+    IDS_STRING_NO_IMAGE     "沒有圖片！"
+    IDS_STRING_NO_NAME      "未命名"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZOOM_MAX     "縮放倍數不能大于3!"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GCAP_DIALOG DIALOGEX 0, 0, 903, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Demo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "硈尿牟祇",IDC_START_CONTINUE_Trigger,70,6,50,14,WS_DISABLED
+    PUSHBUTTON      "妮┦",IDC_PROPERTY_SET,355,6,50,14,WS_DISABLED
+    PUSHBUTTON      "氨ゎ",IDC_STOP,241,6,50,14,WS_DISABLED
+    PUSHBUTTON      "虫眎牟祇",IDC_START_SINGLE_TRIGGER,127,6,50,14,WS_DISABLED
+    PUSHBUTTON      "场牟祇",IDC_START_SYNC_TRIGGER,184,6,50,14,WS_DISABLED
+    PUSHBUTTON      "玂瓜",IDC_SAVE_IMAGE,298,6,50,14,WS_DISABLED
+    CONTROL         "",IDC_PICTURESHOW,"Static",SS_BLACKFRAME | WS_BORDER,14,31,317,155
+    RTEXT           "罽",IDC_STATIC,506,10,19,8
+    COMBOBOX        IDC_CMB_ZOOM,528,6,37,58,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "絬",IDC_CHK_CROSS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,574,9,36,10
+    LTEXT           "0.00",IDC_STATIC_FPS,711,8,25,12,0,WS_EX_STATICEDGE
+    LTEXT           "碫瞯",IDC_STATIC,689,10,17,8
+    PUSHBUTTON      "硈尿栋",IDC_START_FREE_RUN,13,6,50,14,WS_DISABLED
+    LTEXT           "",IDC_STATIC_MOUSELOCATION,745,8,40,12,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_RGB,794,8,109,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TRIGGERFPS,656,6,24,14,ES_AUTOHSCROLL
+    LTEXT           "牟祇碫瞯",IDC_STATIC,618,9,33,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GCAP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 896
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 192
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GCAP_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x3035, 0x0025, 
+    IDC_CMB_ZOOM, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    IDC_CMB_ZOOM, 0x403, 5, 0
+0x3032, 0x2530, "\000" 
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x6946, 0x0074, 
+    0
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\GCap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,104 @@
+;
+; GEVFilter driver INF file - this is the INF for the service (protocol) part.
+;
+;
+; ----------------------------------------------------------------------
+
+[Version]
+Signature  = "$Windows NT$"
+Class      = NetService
+ClassGUID  = {4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider   = %GEV%
+DriverVer  =08/08/2009,6.0.5019.0
+
+;=========================================================================
+[Manufacturer]
+%GEV% = GEV,NTx86,NTia64,NTamd64
+
+[ControlFlags]
+
+[GEV]
+;For Win2K
+%GEVFilter_Desc% = GEVFilter.ndi, ms_gevfilter
+
+[GEV.NTx86]
+;For WinXP and later
+%GEVFilter_Desc% = GEVFilter.ndi, ms_gevfilter
+
+[GEV.NTia64]
+%GEVFilter_Desc% = GEVFilter.ndi, ms_gevfilter
+
+[GEV.NTamd64]
+%GEVFilter_Desc% = GEVFilter.ndi, ms_gevfilter
+
+;=========================================================================
+[GEVFilter.ndi]
+AddReg          = GEVFilter.ndi.AddReg, GEVFilter.AddReg
+Characteristics = 0x4410 ;  NCF_FILTER | NCF_NDIS_PROTOCOL !--Filter Specific--!!
+CopyFiles       = GEVFilter.Files.Sys
+CopyInf         = gevfilter_m.inf
+
+[GEVFilter.ndi.Remove]
+DelFiles = GEVFilter.Files.Sys
+
+[GEVFilter.ndi.Services]
+AddService = GevFilter,, GEVFilter.AddService
+
+[GEVFilter.AddService]
+DisplayName    = %GEVFilterService_Desc%
+ServiceType    = 1 ;SERVICE_KERNEL_DRIVER
+StartType      = 3 ;SERVICE_DEMAND_START
+ErrorControl   = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\gevfilter.sys
+LoadOrderGroup = PNP_TDI
+AddReg         = GEVFilter.AddService.AddReg
+
+
+[GEVFilter.AddService.AddReg]
+; ----------------------------------------------------------------------
+; Add any miniport-specific parameters here.  These are params that your
+; filter device is going to use.
+;
+;HKR, Parameters, ParameterName,  0x10000, "MultiSz", "Parameter", "Value"
+;HKR, Parameters, ParameterName2, 0x10001, 4
+
+
+; ----------------------------------------------------------------------
+; File copy
+;
+[SourceDisksNames]
+1=%DiskDescription%,"",,
+
+[SourceDisksFiles]
+gevfilter.sys=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+GEVFilter.Files.Sys   = 12   ; %windir%\System32\drivers
+
+[GEVFilter.Files.Sys]
+gevfilter.sys,,,2
+
+; ----------------------------------------------------------------------
+; Filter Install
+
+[GEVFilter.ndi.AddReg]
+HKR, Ndi, HelpText, , %GEVFilter_HELP%
+;
+HKR, Ndi,            FilterClass,         , GEVfailover
+HKR, Ndi,            FilterDeviceInfId,   , ms_gevfiltermp
+HKR, Ndi,            Service,             , GevFilter
+HKR, Ndi\Interfaces, UpperRange,          , noupper
+HKR, Ndi\Interfaces, LowerRange,          , nolower
+HKR, Ndi\Interfaces, FilterMediaTypes,    , "ethernet, tokenring, fddi, wan"
+
+[GEVFilter.AddReg]
+HKR, Parameters, Param1, 0, 4
+
+; ----------------------------------------------------------------------
+[Strings]
+GEV = "GEV Corporation"
+DiskDescription = "GEV Filter Driver Disk"
+GEVFilter_Desc = "GEV Filter Helper"
+GEVFilter_HELP = "GEV Filter Intermediate Driver"
+GEVFilterService_Desc = "GEVFilter Service"

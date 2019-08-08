@@ -1,0 +1,74 @@
+;
+; GEVFilter Miniport INF file
+;
+;
+; ----------------------------------------------------------------------
+[Version]
+signature  = "$Windows NT$"
+Class      = Net
+ClassGUID  = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider   = %GEV%
+DriverVer  =08/08/2009,6.0.5019.0
+
+[ControlFlags]
+ExcludeFromSelect = ms_gevfiltermp
+
+[DestinationDirs]
+DefaultDestDir=12
+; No files to copy 
+
+;=========================================================================
+[Manufacturer]
+%GEV% = GEV,NTx86,NTia64,NTamd64
+
+[GEV]
+;For Win2K
+%GEVFilterMP_Desc% = GEVFilterMP.ndi, ms_gevfiltermp
+
+[GEV.NTx86]
+;For WinXP and later
+%GEVFilterMP_Desc% = GEVFilterMP.ndi, ms_gevfiltermp
+
+[GEV.NTia64]
+%GEVFilterMP_Desc% = GEVFilterMP.ndi, ms_gevfiltermp
+
+[GEV.NTamd64]
+%GEVFilterMP_Desc% = GEVFilterMP.ndi, ms_gevfiltermp
+;=========================================================================
+[GEVFilterMP.ndi]
+AddReg  = GEVFilterMP.ndi.AddReg
+Characteristics = 0x29 ;NCF_NOT_USER_REMOVABLE | NCF_VIRTUAL | NCF_HIDDEN
+
+[GEVFilterMP.ndi.AddReg]
+HKR, Ndi, Service,  0,  GEVFilterMP
+
+[GEVFilterMP.ndi.Services]
+AddService = GevFilter,0x2, GEVFilterMP.AddService
+
+[GEVFilterMP.AddService]
+ServiceType    = 1 ;SERVICE_KERNEL_DRIVER
+StartType      = 3 ;SERVICE_DEMAND_START
+ErrorControl   = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\gevfilter.sys
+AddReg         = GEVFilterMP.AddService.AddReg
+
+
+[GEVFilterMP.AddService.AddReg]
+; ----------------------------------------------------------------------
+; Add any miniport-specific parameters here.  These are params that your
+; filter device is going to use.
+;
+;HKR, Parameters, ParameterName,  0x10000, "MultiSz", "Parameter", "Value"
+;HKR, Parameters, ParameterName2, 0x10001, 4
+
+[Strings]
+GEV = "GEV Company"
+GEVFilterMP_Desc = "GEV Filter Miniport"
+
+[SourceDisksNames]
+;None 
+
+[SourceDisksFiles]
+;None
+
+

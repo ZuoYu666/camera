@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TriggerCount", "TriggerCount\TriggerCount.vbproj", "{E753D879-6937-4A56-A8B8-D500A519146C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Debug|x64.ActiveCfg = Debug|x64
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Debug|x64.Build.0 = Debug|x64
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Debug|x86.ActiveCfg = Debug|x86
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Debug|x86.Build.0 = Debug|x86
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Release|x64.ActiveCfg = Release|x64
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Release|x64.Build.0 = Release|x64
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Release|x86.ActiveCfg = Release|x86
+		{E753D879-6937-4A56-A8B8-D500A519146C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

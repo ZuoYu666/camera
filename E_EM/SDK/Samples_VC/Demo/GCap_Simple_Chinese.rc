@@ -1,0 +1,744 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\GCap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GCap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GCAP_DIALOG DIALOGEX 0, 0, 965, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "   "
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PICTURESHOW,"Static",SS_BLACKFRAME | WS_BORDER,14,31,317,155
+    RTEXT           "缩放:",IDC_STATIC,440,9,20,8
+    COMBOBOX        IDC_CMB_ZOOM,464,7,37,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "0.00",IDC_STATIC_FPS,765,7,25,12,0,WS_EX_STATICEDGE
+    LTEXT           "帧率:",IDC_STATIC,742,9,20,8
+    LTEXT           "",IDC_STATIC_MOUSELOCATION,794,7,46,12,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_RGB,845,7,64,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TRIGGERFPS,718,7,19,12,ES_AUTOHSCROLL
+    RTEXT           "触发频率:",IDC_STATIC,676,9,38,8
+    COMBOBOX        IDC_COMBO_CMA_ID,325,7,111,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "彩转灰",IDC_CHECK_RGB_TO_GRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,510,6,37,14
+    COMBOBOX        IDC_CMB_FLIP_ROTATE,548,7,60,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "十字线",IDC_CENTRE_CROSS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,614,9,36,10
+    CONTROL         "降噪",IDC_DENOISE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,650,9,28,10
+END
+
+IDD_REC_CTR DIALOGEX 0, 0, 214, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录像控制"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "当前文件名",IDC_STATIC,7,55,200,47
+    GROUPBOX        "时间信息",IDC_STATIC,7,107,200,70
+    PUSHBUTTON      "开始",IDC_BUTTON_RECORD_START,7,186,40,14
+    PUSHBUTTON      "停止",IDC_BUTTON_RECORD_STOP,92,186,40,14
+    PUSHBUTTON      "设置",IDC_BUTTON_RECORD_CONFIG,157,186,50,14
+    LTEXT           "temp.avi",IDC_STATIC_FILE_NAME,18,69,182,27
+    LTEXT           "录像时长：",IDC_STATIC,18,125,42,11
+    LTEXT           "录像帧数：",IDC_STATIC,18,143,42,11
+    LTEXT           "Static",IDC_STATIC_RECORD_TIME,59,125,49,8
+    LTEXT           "Static",IDC_STATIC_FRAMES,59,143,19,8
+    GROUPBOX        "视频文件类型",IDC_STATIC,7,7,200,43
+    LTEXT           "文件类型：",IDC_STATIC,18,20,42,11
+    LTEXT           "编码方式：",IDC_STATIC,18,35,42,11
+    LTEXT           "Avi",IDC_STATIC_FILE_TYPE,70,20,118,11
+    LTEXT           "Static",IDC_STATIC_CODEC,70,35,118,11
+    LTEXT           "上限：",IDC_STATIC,116,125,26,11
+    LTEXT           "上限：",IDC_STATIC,116,143,26,11
+    LTEXT           "Static",IDC_STATIC_RECORD_TIME_LIMIT,144,125,49,8
+    LTEXT           "Static",IDC_STATIC_FRAME_LIMIT,144,143,19,8
+    LTEXT           "Static",IDC_STATIC_CAPTURE_STEP,18,161,148,11
+    PUSHBUTTON      "暂停",IDC_BUTTON_RECORD_PAUSE,50,186,40,14
+END
+
+IDD_REC_CONF DIALOGEX 0, 0, 322, 331
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录像设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "选择",IDC_BUTTON_CHANGE_CODEC,255,23,50,14
+    PUSHBUTTON      "选择文件夹",IDC_BUTTON_CHANGE_PATH,255,94,50,14
+    EDITTEXT        IDC_EDIT_FILENAME_PREFIX,67,117,83,14,ES_AUTOHSCROLL
+    CONTROL         "起始序号",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,195,119,48,10
+    EDITTEXT        IDC_EDIT_INDEX,255,117,50,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TIME_STYLE,67,140,92,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "采集超过指定时间后自动停止 [秒]",IDC_CHK_REC_TIME_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,184,132,10
+    EDITTEXT        IDC_EDIT_REC_TIME_LIMIT,180,181,50,14,ES_AUTOHSCROLL
+    CONTROL         "采集超过指定帧数后自动停止",IDC_CHK_REC_FRAME_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,206,129,10
+    EDITTEXT        IDC_EDIT_REC_FRAME_LIMIT,180,205,50,14,ES_AUTOHSCROLL
+    CONTROL         "采集超过指定文件大小后自动停止 [M]",IDC_CHK_REC_FSIZE_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,230,146,10
+    EDITTEXT        IDC_EDIT_REC_FSIZE_LIMIT,180,229,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REC_INTERVAL,73,279,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_INTERVAL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,123,279,11,14
+    DEFPUSHBUTTON   "确认",IDOK,205,310,50,14
+    PUSHBUTTON      "取消",IDCANCEL,265,310,50,14
+    GROUPBOX        "自动文件名",IDC_STATIC,7,55,308,106
+    LTEXT           "文件夹",IDC_STATIC,19,97,33,8
+    LTEXT           "文件名前缀",IDC_STATIC,19,120,41,8
+    EDITTEXT        IDC_EDIT_PATH,67,94,176,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "自动停止",IDC_STATIC,7,168,308,87
+    GROUPBOX        "视频格式",IDC_STATIC,7,7,308,41
+    CONTROL         "使用自动文件名",IDC_CHK_AUTO_FILENAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,73,72,10
+    GROUPBOX        "间隔",IDC_STATIC,7,263,308,38
+    LTEXT           "每N帧录1帧  N:",IDC_STATIC,16,281,53,8
+    LTEXT           "全帧(未压缩)",IDC_CODEC,16,25,228,8
+    LTEXT           "时间格式",IDC_STATIC,19,142,43,8
+    DEFPUSHBUTTON   "载入",IDC_LOAD,85,310,50,14
+    DEFPUSHBUTTON   "保存",IDC_SAVE,145,310,50,14
+END
+
+IDD_SEQ_CTR DIALOGEX 0, 0, 214, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "序列计时"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "当前文件名",IDC_STATIC,7,7,200,45
+    GROUPBOX        "时间信息",IDC_STATIC,7,59,200,54
+    PUSHBUTTON      "开始",IDC_BUTTON_SEQUENCE_START,28,123,50,14
+    PUSHBUTTON      "停止",IDC_BUTTON_SEQUENCE_STOP,82,123,50,14
+    PUSHBUTTON      "设置",IDC_BUTTON_SEQUENCE_CONFIG,136,123,50,14
+    LTEXT           "",IDC_STATIC_NEXT_IMAGE_PATH,17,21,183,25
+    LTEXT           "存图间隔：",IDC_STATIC,39,74,68,8
+    LTEXT           "距下一张图时间：",IDC_STATIC,39,96,68,8
+    LTEXT           "Static",IDC_STATIC_TIME_SPACE,130,74,19,8
+    LTEXT           "Static",IDC_STATIC_NEXT_IMAGE_DELAY,130,96,19,8
+    LTEXT           "[秒]",IDC_STATIC,155,74,14,8
+    LTEXT           "[秒]",IDC_STATIC,155,96,14,8
+END
+
+IDD_SEQ_CONF DIALOGEX 0, 0, 322, 224
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "队列设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,203,50,14
+    PUSHBUTTON      "取消",IDCANCEL,265,203,50,14
+    GROUPBOX        "文件名",IDC_STATIC,7,7,308,87
+    LTEXT           "路径",IDC_STATIC,16,25,19,8
+    LTEXT           "文件名前缀",IDC_STATIC,16,48,41,8
+    LTEXT           "存储格式",IDC_STATIC,195,70,36,8
+    EDITTEXT        IDC_EDIT_PATH,67,22,176,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "浏览",IDC_BUTTON_CHANGE_PATH,255,22,50,14
+    COMBOBOX        IDC_COMBO_FILE_TYPE,255,68,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FILENAME_PREFIX,67,45,83,14,ES_AUTOHSCROLL
+    CONTROL         "起始序号",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,195,47,48,10
+    EDITTEXT        IDC_EDIT_INDEX,255,45,50,14,ES_AUTOHSCROLL
+    GROUPBOX        "时间间隔",IDC_STATIC,7,100,308,43
+    EDITTEXT        IDC_EDIT_MINUTE,84,116,40,14,ES_AUTOHSCROLL
+    LTEXT           "[分]",IDC_STATIC,129,119,14,8
+    EDITTEXT        IDC_EDIT_SECOND,170,116,40,14,ES_AUTOHSCROLL
+    LTEXT           "[秒]",IDC_STATIC,216,119,14,8
+    COMBOBOX        IDC_COMBO_TIME_STYLE,67,68,92,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "时间格式",IDC_STATIC,16,71,33,8
+    PUSHBUTTON      "保存",IDC_SAVE,143,203,50,14
+    PUSHBUTTON      "载入",IDC_LOAD,81,203,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GCAP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 958
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_REC_CTR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_REC_CONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_SEQ_CTR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_SEQ_CONF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GCAP_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x3035, 0x0025, 
+    IDC_CMB_ZOOM, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    IDC_CMB_ZOOM, 0x403, 5, 0
+0x3032, 0x2530, "\000" 
+    IDC_CMB_ZOOM, 0x403, 9, 0
+0xe4b3, 0xfac2, 0xb0b4, 0xdabf, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 5, 0
+0xadd4, 0xbccd, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 9, 0
+0xaecb, 0xbdc6, 0xadb7, 0xaad7, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 9, 0
+0xb9b4, 0xb1d6, 0xadb7, 0xaad7, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 10, 0
+0xfdd0, 0xaad7, 0x3831, 0xb630, 0x00c8, 
+    IDC_CMB_FLIP_ROTATE, 0x403, 15, 0
+0xb3cb, 0xb1ca, 0xebd5, 0xfdd0, 0xaad7, 0x3039, 0xc8b6, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 15, 0
+0xe6c4, 0xb1ca, 0xebd5, 0xfdd0, 0xaad7, 0x3039, 0xc8b6, "\000" 
+    0
+END
+
+IDD_REC_CONF DLGINIT
+BEGIN
+    IDC_COMBO_TIME_STYLE, 0x403, 9, 0
+0x4848, 0x4d2d, 0x2d4d, 0x5353, "\000" 
+    IDC_COMBO_TIME_STYLE, 0x403, 18, 0
+0x5959, 0x4d2d, 0x2d4d, 0x4444, 0x4820, 0x2d48, 0x4d4d, 0x532d, 0x0053, 
+
+    IDC_COMBO_TIME_STYLE, 0x403, 3, 0
+0xdece, "\000" 
+    0
+END
+
+IDD_SEQ_CONF DLGINIT
+BEGIN
+    IDC_COMBO_FILE_TYPE, 0x403, 5, 0
+0x622e, 0x706d, "\000" 
+    IDC_COMBO_FILE_TYPE, 0x403, 5, 0
+0x742e, 0x6669, "\000" 
+    IDC_COMBO_FILE_TYPE, 0x403, 5, 0
+0x6a2e, 0x6770, "\000" 
+    IDC_COMBO_TIME_STYLE, 0x403, 9, 0
+0x4848, 0x4d2d, 0x2d4d, 0x5353, "\000" 
+    IDC_COMBO_TIME_STYLE, 0x403, 18, 0
+0x5959, 0x4d2d, 0x2d4d, 0x4444, 0x4820, 0x2d48, 0x4d4d, 0x532d, 0x0053, 
+
+    IDC_COMBO_TIME_STYLE, 0x403, 3, 0
+0xdece, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDB_MAIN                BITMAP                  "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  25, 25
+BEGIN
+    BUTTON      IDC_OPEN
+    BUTTON      IDC_START_FREE_RUN
+    BUTTON      IDC_START_CONTINUE_TRIGGER
+    BUTTON      IDC_START_SINGLE_TRIGGER
+    BUTTON      IDC_START_SYNC_TRIGGER
+    BUTTON      IDC_STOP
+    BUTTON      IDC_SAVE_IMAGE
+    BUTTON      IDC_PROPERTY_SET
+    SEPARATOR
+    BUTTON      IDC_SEQUENCE_TIMER
+    BUTTON      IDC_SEQUENCE_CAP
+    BUTTON      IDC_SEQUENCE_CONFIG
+    SEPARATOR
+    BUTTON      IDC_RECORD
+    BUTTON      IDC_RECORD_CONF
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZOOM_MAX     "缩放倍数不能大于3!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZOOM_MIN     "缩放倍数不能小于0.1!"
+    IDS_STRING_GETCAMERANUM "没有找到相机,请确认连接和相机IP设置!"
+    IDS_STRING_TRIGGER_FAILED "触发失败"
+    IDS_STRING_ACCESS_DENIED "可能正被别的软件控制!"
+    IDS_STRING_OPEN_FAILED  "无法打开相机"
+    IDS_STRING_PROPERTY_SET "属性设置"
+    IDS_STRING_NO_IMAGE     "没有图片！"
+    IDS_STRING_NO_NAME      "未命名"
+    IDS_STRING_CONNECT      "连接"
+    IDS_STRING_DISCONNECT   "断开"
+    IDS_STRING_WARNING      "提示"
+    IDS_STRING_START_FAILED "启动失败"
+    IDS_ERR_CREATE_AVI      "无法创建avi"
+    IDS_ERR_SET_COMPRESSION "无法设置压缩属性"
+    IDS_CONFIRM_EXIT        "确认退出程序"
+    IDS_ERR_SAVE            "保存失败"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_OPEN                "连接/断开相机\n连接/断开相机"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_STOP                "停止采集\n停止采集"
+    IDC_SAVE_IMAGE          "保存图像\n保存图像"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_START_CONTINUE_TRIGGER "连续软触发采集\n连续软触发采集"
+    IDC_PROPERTY_SET        "相机参数设置\n相机参数设置"
+    IDC_START_SINGLE_TRIGGER "单次软触发采集\n单次软触发采集"
+    IDC_START_SYNC_TRIGGER  "外触发采集\n外触发采集"
+    IDC_START_FREE_RUN      "连续采集\n连续采集"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SEQUENCE_START      "开始序列帧采集\n开始序列帧采集"
+    IDC_SEQUENCE_CONFIG     "序列帧设置\n序列帧设置"
+    IDC_RECORD              "开始录像\n开始录像"
+    IDC_RECORD_STOP         "停止录像\n停止录像"
+    IDC_RECORD_CONF         "录像设置\n录像设置"
+    IDC_SEQUENCE_STOP       "采集图像到序列\n采集图像到序列"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SEQUENCE_TIMER      "定时采集图像\n定时采集图像"
+    IDC_SEQUENCE_CAP        "采集到序列帧(自动生成文件名并保存图像)\n采集到序列帧(自动生成文件名并保存图像)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_READ_SEQ        "载入失败"
+    IDS_PAUSE               "暂停"
+    IDS_RESTART             "继续"
+    IDS_CAP_INTERVAL        "每%d张图抓一张"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GCAP_DIALOG DIALOGEX 0, 0, 913, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "   "
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PICTURESHOW,"Static",SS_BLACKFRAME | WS_BORDER,14,31,317,155
+    RTEXT           "Zoom:",IDC_STATIC,440,9,20,8
+    COMBOBOX        IDC_CMB_ZOOM,464,7,37,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "0.00",IDC_STATIC_FPS,767,7,25,12,0,WS_EX_STATICEDGE
+    LTEXT           "FPS:",IDC_STATIC,746,9,20,8
+    LTEXT           "",IDC_STATIC_MOUSELOCATION,794,7,46,12,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_RGB,846,7,64,12,0,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_TRIGGERFPS,724,7,19,12,ES_AUTOHSCROLL
+    RTEXT           "Trig Rate:",IDC_STATIC,686,9,38,8
+    COMBOBOX        IDC_COMBO_CMA_ID,325,7,111,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "To Gray",IDC_CHECK_RGB_TO_GRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,510,6,37,14
+    COMBOBOX        IDC_CMB_FLIP_ROTATE,548,7,60,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Cross",IDC_CENTRE_CROSS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,616,9,31,10
+    CONTROL         "Denoise",IDC_DENOISE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,649,9,41,10
+END
+
+IDD_REC_CTR DIALOGEX 0, 0, 214, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Record Control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "File name",IDC_STATIC,7,55,200,34
+    GROUPBOX        "Time",IDC_STATIC,7,94,200,70
+    PUSHBUTTON      "Start",IDC_BUTTON_RECORD_START,7,174,40,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_RECORD_STOP,92,174,40,14
+    PUSHBUTTON      "Option",IDC_BUTTON_RECORD_CONFIG,157,174,50,14
+    CTEXT           "temp.avi",IDC_STATIC_FILE_NAME,18,69,183,11
+    LTEXT           "Elapse",IDC_STATIC,18,112,42,11
+    LTEXT           "Frames",IDC_STATIC,18,130,42,11
+    LTEXT           "Static",IDC_STATIC_RECORD_TIME,59,112,49,8
+    LTEXT           "Static",IDC_STATIC_FRAMES,59,130,19,8
+    GROUPBOX        "File Format",IDC_STATIC,7,7,200,43
+    LTEXT           "File Type",IDC_STATIC,18,20,42,11
+    LTEXT           "Compression",IDC_STATIC,18,35,42,11
+    LTEXT           "Avi",IDC_STATIC_FILE_TYPE,70,20,118,11
+    LTEXT           "Static",IDC_STATIC_CODEC,70,35,118,11
+    LTEXT           "Upper",IDC_STATIC,116,112,26,11
+    LTEXT           "Lower",IDC_STATIC,116,130,26,11
+    LTEXT           "Static",IDC_STATIC_RECORD_TIME_LIMIT,144,112,49,8
+    LTEXT           "Static",IDC_STATIC_FRAME_LIMIT,144,130,19,8
+    LTEXT           "Static",IDC_STATIC_CAPTURE_STEP,18,148,148,11
+    PUSHBUTTON      "Pause",IDC_BUTTON_RECORD_PAUSE,50,174,40,14
+END
+
+IDD_REC_CONF DIALOGEX 0, 0, 322, 331
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Record Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Codec",IDC_BUTTON_CHANGE_CODEC,255,23,50,14
+    PUSHBUTTON      "Browse",IDC_BUTTON_CHANGE_PATH,255,94,50,14
+    EDITTEXT        IDC_EDIT_FILENAME_PREFIX,67,117,83,14,ES_AUTOHSCROLL
+    CONTROL         "Start Number",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,189,119,54,10
+    EDITTEXT        IDC_EDIT_INDEX,255,117,50,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TIME_STYLE,67,140,92,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Stop over seconds",IDC_CHK_REC_TIME_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,184,132,10
+    EDITTEXT        IDC_EDIT_REC_TIME_LIMIT,180,181,50,14,ES_AUTOHSCROLL
+    CONTROL         "Stop over frames",IDC_CHK_REC_FRAME_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,206,129,10
+    EDITTEXT        IDC_EDIT_REC_FRAME_LIMIT,180,205,50,14,ES_AUTOHSCROLL
+    CONTROL         "Stop over file size [M]",IDC_CHK_REC_FSIZE_LIMIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,230,146,10
+    EDITTEXT        IDC_EDIT_REC_FSIZE_LIMIT,180,229,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REC_INTERVAL,73,279,50,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_INTERVAL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,123,279,11,14
+    DEFPUSHBUTTON   "Ok",IDOK,205,310,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,310,50,14
+    GROUPBOX        "Auto file name",IDC_STATIC,7,55,308,106
+    LTEXT           "Folder",IDC_STATIC,19,97,33,8
+    LTEXT           "File Prefix",IDC_STATIC,19,120,41,8
+    EDITTEXT        IDC_EDIT_PATH,67,94,176,14,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Auto stop",IDC_STATIC,7,168,308,87
+    GROUPBOX        "Format",IDC_STATIC,7,7,308,41
+    CONTROL         "Auto file name",IDC_CHK_AUTO_FILENAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,73,72,10
+    GROUPBOX        "Interval",IDC_STATIC,7,263,308,38
+    LTEXT           "Record 1 of N frame:",IDC_STATIC,16,281,53,8
+    LTEXT           "Full Frames(Uncompressed)",IDC_CODEC,16,25,228,8
+    LTEXT           "Time format",IDC_STATIC,19,142,43,8
+    DEFPUSHBUTTON   "Load",IDC_LOAD,85,310,50,14
+    DEFPUSHBUTTON   "Save",IDC_SAVE,145,310,50,14
+END
+
+IDD_SEQ_CTR DIALOGEX 0, 0, 214, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sequence Control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "File Name",IDC_STATIC,7,7,200,45
+    GROUPBOX        "Time",IDC_STATIC,7,59,200,54
+    PUSHBUTTON      "Start",IDC_BUTTON_SEQUENCE_START,28,123,50,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_SEQUENCE_STOP,82,123,50,14
+    PUSHBUTTON      "Option",IDC_BUTTON_SEQUENCE_CONFIG,136,123,50,14
+    CTEXT           "",IDC_STATIC_NEXT_IMAGE_PATH,29,26,137,11
+    LTEXT           "Interval:",IDC_STATIC,39,74,68,8
+    LTEXT           "Seconds to next frame:",IDC_STATIC,39,96,77,8
+    LTEXT           "Static",IDC_STATIC_TIME_SPACE,130,74,19,8
+    LTEXT           "Static",IDC_STATIC_NEXT_IMAGE_DELAY,130,96,19,8
+    LTEXT           "[s]",IDC_STATIC,155,74,14,8
+    LTEXT           "[s]",IDC_STATIC,155,96,14,8
+END
+
+IDD_SEQ_CONF DIALOGEX 0, 0, 322, 224
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sequence Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,205,203,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,203,50,14
+    GROUPBOX        "File name",IDC_STATIC,7,7,308,87
+    LTEXT           "Path",IDC_STATIC,16,25,19,8
+    LTEXT           "Prefix",IDC_STATIC,16,48,41,8
+    LTEXT           "Format",IDC_STATIC,195,70,36,8
+    EDITTEXT        IDC_EDIT_PATH,67,22,176,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Browse",IDC_BUTTON_CHANGE_PATH,255,22,50,14
+    COMBOBOX        IDC_COMBO_FILE_TYPE,255,68,50,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FILENAME_PREFIX,67,45,83,14,ES_AUTOHSCROLL
+    CONTROL         "Start No.",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,195,47,48,10
+    EDITTEXT        IDC_EDIT_INDEX,255,45,50,14,ES_AUTOHSCROLL
+    GROUPBOX        "Time interval",IDC_STATIC,7,100,308,43
+    EDITTEXT        IDC_EDIT_MINUTE,84,116,40,14,ES_AUTOHSCROLL
+    LTEXT           "[Min]",IDC_STATIC,129,119,19,8
+    EDITTEXT        IDC_EDIT_SECOND,170,116,40,14,ES_AUTOHSCROLL
+    LTEXT           "[Sec]",IDC_STATIC,216,119,20,8
+    COMBOBOX        IDC_COMBO_TIME_STYLE,67,68,92,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Time Format",IDC_STATIC,16,71,33,8
+    PUSHBUTTON      "Save Option",IDC_SAVE,143,203,50,14
+    PUSHBUTTON      "Load Option",IDC_LOAD,81,203,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GCAP_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x3035, 0x0025, 
+    IDC_CMB_ZOOM, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    IDC_CMB_ZOOM, 0x403, 5, 0
+0x3032, 0x2530, "\000" 
+    IDC_CMB_ZOOM, 0x403, 4, 0
+0x6946, 0x0074, 
+    IDC_CMB_FLIP_ROTATE, 0x403, 7, 0
+0x6f53, 0x7275, 0x6563, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 11, 0
+0x6c46, 0x7069, 0x4820, 0x726f, 0x7a69, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 11, 0
+0x6c46, 0x7069, 0x5620, 0x7265, 0x2e74, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 11, 0
+0x6f52, 0x6174, 0x6574, 0x3120, 0x3038, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 13, 0
+0x6f52, 0x6174, 0x6574, 0x3920, 0x2030, 0x5743, "\000" 
+    IDC_CMB_FLIP_ROTATE, 0x403, 14, 0
+0x6f52, 0x6174, 0x6574, 0x3920, 0x2030, 0x4343, 0x0057, 
+    0
+END
+
+IDD_REC_CONF DLGINIT
+BEGIN
+    IDC_COMBO_TIME_STYLE, 0x403, 9, 0
+0x4848, 0x4d2d, 0x2d4d, 0x5353, "\000" 
+    IDC_COMBO_TIME_STYLE, 0x403, 18, 0
+0x5959, 0x4d2d, 0x2d4d, 0x4444, 0x4820, 0x2d48, 0x4d4d, 0x532d, 0x0053, 
+
+    IDC_COMBO_TIME_STYLE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    0
+END
+
+IDD_SEQ_CONF DLGINIT
+BEGIN
+    IDC_COMBO_TIME_STYLE, 0x403, 9, 0
+0x4848, 0x4d2d, 0x2d4d, 0x5353, "\000" 
+    IDC_COMBO_TIME_STYLE, 0x403, 18, 0
+0x5959, 0x4d2d, 0x2d4d, 0x4444, 0x4820, 0x2d48, 0x4d4d, 0x532d, 0x0053, 
+
+    IDC_COMBO_TIME_STYLE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZOOM_MAX     "Max zoom is 300%!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ZOOM_MIN     "Min zoom is 10%!"
+    IDS_STRING_GETCAMERANUM "No camera is found, make sure the connection and IP setting of cameras!"
+    IDS_STRING_TRIGGER_FAILED "Failed to trigger"
+    IDS_STRING_ACCESS_DENIED 
+                            "Failed to open the camera, The camera is most likely controlled by another application!"
+    IDS_STRING_OPEN_FAILED  "Failed to open camera"
+    IDS_STRING_PROPERTY_SET "Camera Property"
+    IDS_STRING_NO_IMAGE     "No image"
+    IDS_STRING_NO_NAME      "Unnamed"
+    IDS_STRING_CONNECT      "Connect"
+    IDS_STRING_DISCONNECT   "Disconnect"
+    IDS_STRING_WARNING      "Prompt"
+    IDS_STRING_START_FAILED "Failed to start"
+    IDS_ERR_CREATE_AVI      "Failed to create avi"
+    IDS_ERR_SET_COMPRESSION "Failed to set compression"
+    IDS_CONFIRM_EXIT        "Are you sure to exit"
+    IDS_ERR_SAVE            "Failed to Save"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_OPEN                "Connect/Disconnect\nConnect/Disconnect"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_STOP                "Stop\nStop"
+    IDC_SAVE_IMAGE          "Save\nSave"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_START_CONTINUE_TRIGGER 
+                            "Trigger software(Continuous)\nTrigger software(Continuous)"
+    IDC_PROPERTY_SET        "Camera property\nCamera property"
+    IDC_START_SINGLE_TRIGGER "Trigger software(Once)\nTrigger software(Once)"
+    IDC_START_SYNC_TRIGGER  "Trigger External\nTrigger External"
+    IDC_START_FREE_RUN      "Free run\nFree run"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SEQUENCE_START      "Start sequence\nStart sequence"
+    IDC_SEQUENCE_CONFIG     "Sequence option\nSequence option"
+    IDC_RECORD              "Start record\nStart record"
+    IDC_RECORD_STOP         "Stop record\nStop record"
+    IDC_RECORD_CONF         "Record option\nRecord option"
+    IDC_SEQUENCE_STOP       "Stop sequence\nStop sequence"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SEQUENCE_TIMER      "Sequence Control\nSequence Control"
+    IDC_SEQUENCE_CAP        "Save into sequence\nSave into sequence"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_READ_SEQ        "Failed to load"
+    IDS_PAUSE               "Pause"
+    IDS_RESTART             "Restart"
+    IDS_CAP_INTERVAL        "Record 1 of %d frames"
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\GCap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

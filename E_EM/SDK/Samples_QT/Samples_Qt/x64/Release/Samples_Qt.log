@@ -1,0 +1,14 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Moc'ing Samples_Qt_TriggerCount.h...
+  Rcc'ing Samples_Qt_TriggerCount.qrc...
+  Uic'ing Samples_Qt_TriggerCount.ui...
+  RCC: Warning: No resources in 'C:\Program Files\Microvision\E_EM\SDK\Samples_QT - 鍓湰\Samples_Qt\Samples_Qt_TriggerCount.qrc'.
+  main.cpp
+  MVScrollArea.cpp
+  Samples_Qt_TriggerCount.cpp
+  moc_Samples_Qt_TriggerCount.cpp
+  qrc_Samples_Qt_TriggerCount.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  Samples_Qt.vcxproj -> C:\Program Files\Microvision\E_EM\SDK\Samples_QT - 副本\Samples_Qt\../../bin\Samples_Qt.exe

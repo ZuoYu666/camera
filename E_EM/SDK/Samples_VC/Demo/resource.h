@@ -1,0 +1,126 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by GCap_Simple_Chinese.rc
+//
+#define IDC_LOAD                        3
+#define IDC_SAVE                        4
+#define IDD_GCAP_DIALOG                 102
+#define IDR_MAINFRAME                   128
+#define IDD_COLOR                       130
+#define IDS_STRING_ZOOM_MAX             143
+#define IDS_STRING_ZOOM_MIN             144
+#define IDS_STRING_GETCAMERANUM         145
+#define IDS_STRING_TRIGGER_FAILED       146
+#define IDS_STRING_ACCESS_DENIED        147
+#define IDS_STRING_OPEN_FAILED          148
+#define IDS_STRING_PROPERTY_SET         149
+#define IDS_STRING_NO_IMAGE             150
+#define IDD_SEQ_CONF                    150
+#define IDS_STRING_NO_NAME              151
+#define IDS_STRING_CONNECT              152
+#define IDS_STRING_DISCONNECT           153
+#define IDR_TOOLBAR1                    154
+#define IDS_STRING_WARNING              154
+#define IDB_MAIN                        155
+#define IDS_STRING_PROPERTY             155
+#define IDS_STRING_START_FAILED         155
+#define IDD_REC_CONF                    156
+#define IDS_ERR_CREATE_AVI              156
+#define IDS_ERR_SET_COMPRESSION         157
+#define IDD_SEQ_CTR                     158
+#define IDS_CONFIRM_EXIT                158
+#define IDD_REC_CTR                     159
+#define IDS_ERR_SAVE                    159
+#define IDS_ERR_READ_SEQ                160
+#define IDS_PAUSE                       161
+#define IDS_RESTART                     162
+#define IDS_CAP_INTERVAL                163
+#define IDC_START_CONTINUE_TRIGGER      1001
+#define IDC_PROPERTY_SET                1002
+#define IDC_START_SINGLE_TRIGGER        1003
+#define IDC_START_SYNC_TRIGGER          1004
+#define IDC_START_FREE_RUN              1005
+#define IDC_SEQUENCE                    1006
+#define IDC_STOP                        1014
+#define IDC_SAVE_IMAGE                  1015
+#define IDC_PICTURESHOW                 1050
+#define IDC_CMB_ZOOM                    1051
+#define IDC_CMB_FLIP_ROTATE             1052
+#define IDC_CHK_CROSS                   1053
+#define IDC_STATIC_FPS                  1054
+#define IDC_STATIC_MOUSELOCATION        1055
+#define IDC_STATIC_RGB                  1056
+#define IDC_STATIC_MEAN_MAX             1057
+#define IDC_STATIC_WIDTH                1058
+#define IDC_STATIC_HEIGHT               1059
+#define IDC_EDIT_TRIGGERFPS             1060
+#define IDC_COMBO_CMA_ID                1062
+#define IDC_OPEN                        1063
+#define IDC_IMAGE_WIDTH                 1066
+#define IDC_CHECK_RGB_TO_GRAY           1069
+#define IDC_CHECK_MIRROR_X              1072
+#define IDC_CHECK_MIRROR_Y              1080
+#define IDC_STATIC_IAMGE_WIDTH_MAX      1095
+#define IDC_EDIT_PATH                   1110
+#define IDC_BUTTON_CHANGE_PATH          1111
+#define IDC_BUTTON_CHANGE_CODEC         1112
+#define IDC_COMBO_FILE_TYPE             1112
+#define IDC_EDIT_FILENAME_PREFIX        1113
+#define IDC_EDIT_INDEX                  1114
+#define IDC_EDIT_REC_TIME_LIMIT         1115
+#define IDC_EDIT_MINUTE                 1115
+#define IDC_EDIT_REC_FRAME_LIMIT        1116
+#define IDC_EDIT_SECOND                 1116
+#define IDC_EDIT_REC_INTERVAL           1117
+#define IDC_EDIT_REC_FSIZE_LIMIT        1118
+#define IDC_COMBO_HOT_KEY               1118
+#define IDC_COMBO_TIME_STYLE            1119
+#define IDC_CHECK_INDEX                 1120
+#define IDC_CHK_AUTO_FILENAME           1121
+#define IDC_CHECK_HOT_KEY               1121
+#define IDC_CHK_REC_TIME_LIMIT          1123
+#define IDC_SEQUENCE_START              1124
+#define IDC_CHK_REC_FRAME_LIMIT         1124
+#define IDC_SEQUENCE_CONFIG             1125
+#define IDC_CHK_REC_FSIZE_LIMIT         1125
+#define IDC_RECORD                      1126
+#define IDC_RECORD_STOP                 1127
+#define IDC_RECORD_CONF                 1128
+#define IDC_SEQUENCE_STOP               1129
+#define IDC_CODEC                       1131
+#define IDC_BUTTON_SEQUENCE_START       1131
+#define IDC_MANUAL                      1132
+#define IDC_BUTTON_SEQUENCE_STOP        1132
+#define IDC_STATIC_TIME_SPACE           1133
+#define IDC_STATIC_NEXT_IMAGE_DELAY     1134
+#define IDC_BUTTON_SEQUENCE_CONFIG      1135
+#define IDC_STATIC_NEXT_IMAGE_PATH      1136
+#define IDC_STATIC_FILE_TYPE            1137
+#define IDC_STATIC_CODEC                1138
+#define IDC_STATIC_CAPTURE_STEP         1140
+#define IDC_STATIC_FRAMES               1141
+#define IDC_STATIC_RECORD_TIME_LIMIT    1142
+#define IDC_STATIC_FRAME_LIMIT          1143
+#define IDC_STATIC_RECORD_TIME          1144
+#define IDC_STATIC_FILE_NAME            1145
+#define IDC_BUTTON_RECORD_STOP          1146
+#define IDC_BUTTON_RECORD_PAUSE         1147
+#define IDC_BUTTON_RECORD_START         1148
+#define IDC_BUTTON_RECORD_CONFIG        1149
+#define IDC_SPIN_INTERVAL               1152
+#define IDC_BUTTON_FPS_RESET            1153
+#define IDC_CENTRE_CROSS                1155
+#define IDC_DENOISE                     1156
+#define IDC_SEQUENCE_TIMER              32771
+#define IDC_SEQUENCE_CAP                32772
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        159
+#define _APS_NEXT_COMMAND_VALUE         32773
+#define _APS_NEXT_CONTROL_VALUE         1163
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

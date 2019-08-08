@@ -1,0 +1,302 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Cross.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Cross.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CROSS_DIALOG DIALOGEX 0, 0, 617, 410
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Cross"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始",IDC_START,7,7,50,14,WS_DISABLED
+    COMBOBOX        IDC_COMBO_FLIP,194,7,48,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ROTATE,287,7,58,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "翻转:",IDC_STATIC,167,9,20,8
+    LTEXT           "旋转:",IDC_STATIC,261,9,20,8
+    COMBOBOX        IDC_COMBO_ZOOM,101,7,48,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "缩放:",IDC_STATIC,74,9,20,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CROSS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 610
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CROSS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_FLIP, 0x403, 7, 0
+0xbbb2, 0xadb7, 0xaad7, "\000" 
+    IDC_COMBO_FLIP, 0x403, 9, 0
+0xf3d7, 0xd2d3, 0xadb7, 0xaad7, "\000" 
+    IDC_COMBO_FLIP, 0x403, 9, 0
+0xcfc9, 0xc2cf, 0xadb7, 0xaad7, "\000" 
+    IDC_COMBO_FLIP, 0x403, 9, 0
+0xaccd, 0xb1ca, 0xadb7, 0xaad7, "\000" 
+    IDC_COMBO_ROTATE, 0x403, 7, 0
+0xbbb2, 0xfdd0, 0xaad7, "\000" 
+    IDC_COMBO_ROTATE, 0x403, 11, 0
+0xb3cb, 0xb1ca, 0xebd5, 0x3039, 0xe3a1, "\000" 
+    IDC_COMBO_ROTATE, 0x403, 11, 0
+0xe6c4, 0xb1ca, 0xebd5, 0x3039, 0xe3a1, "\000" 
+    IDC_COMBO_ZOOM, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_COMBO_ZOOM, 0x403, 4, 0
+0x3035, 0x0025, 
+    IDC_COMBO_ZOOM, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_CAM              "没有找到相机,请确认连接和相机IP设置"
+    IDS_ERR_ACCESS_DENY     "无法打开相机，可能正被别的软件控制"
+    IDS_ERR_OPEN            "无法打开相机"
+    IDS_STOP                "停止"
+    IDS_START               "开始"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CROSS_DIALOG DIALOGEX 0, 0, 617, 410
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Cross"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Start",IDC_START,7,7,50,14,WS_DISABLED
+    COMBOBOX        IDC_COMBO_FLIP,194,7,48,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ROTATE,295,7,67,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Flip:",IDC_STATIC,167,9,20,8
+    LTEXT           "Rotate:",IDC_STATIC,261,9,28,8
+    COMBOBOX        IDC_COMBO_ZOOM,101,7,48,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zoom:",IDC_STATIC,74,9,20,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CROSS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_FLIP, 0x403, 4, 0
+0x664f, 0x0066, 
+    IDC_COMBO_FLIP, 0x403, 12, 0
+0x6c46, 0x7069, 0x4820, 0x726f, 0x7a69, 0x002e, 
+    IDC_COMBO_FLIP, 0x403, 11, 0
+0x6c46, 0x7069, 0x5620, 0x7265, 0x2e74, "\000" 
+    IDC_COMBO_FLIP, 0x403, 10, 0
+0x6c46, 0x7069, 0x4220, 0x746f, 0x0068, 
+    IDC_COMBO_ROTATE, 0x403, 4, 0
+0x664f, 0x0066, 
+    IDC_COMBO_ROTATE, 0x403, 13, 0
+0x6f52, 0x6174, 0x6574, 0x3920, 0x2030, 0x5743, "\000" 
+    IDC_COMBO_ROTATE, 0x403, 14, 0
+0x6f52, 0x6174, 0x6574, 0x3920, 0x2030, 0x4343, 0x0057, 
+    IDC_COMBO_ZOOM, 0x403, 4, 0
+0x3532, 0x0025, 
+    IDC_COMBO_ZOOM, 0x403, 4, 0
+0x3035, 0x0025, 
+    IDC_COMBO_ZOOM, 0x403, 5, 0
+0x3031, 0x2530, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Cross.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Cross.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_NO_CAM              "No camera is found, make sure the connection and IP setting of cameras!"
+    IDS_ERR_ACCESS_DENY     "Failed to open the camera, The camera is most likely controlled by another application!"
+    IDS_ERR_OPEN            "Failed to open camera"
+    IDS_STOP                "Stop"
+    IDS_START               "Start"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Cross.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
